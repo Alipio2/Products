@@ -4,7 +4,7 @@ Introdução
 ------
 Este projeto consiste em um CRUD de Produtos simples utlizando:
 
-1- dot.net Core 2.0
+1- Dot.net Core 2.0
 
 2- Asp.net.Mvc Core 2.0
 
