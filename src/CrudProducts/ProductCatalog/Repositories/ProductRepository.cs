@@ -13,24 +13,24 @@ namespace ProductCatalog.Repositories
             _context = context;
         }
 
-        internal Product Get(int id)
+        public Product Get(string id)
         {
             return _context.Product.Find(id);
         }
 
-        internal void Create(Product product)
+        public void Create(Product product)
         {
             _context.Product.Add(product);
             _context.SaveChanges();
         }
 
-        internal void Save(Product product)
+        public void Save(Product product)
         {
             _context.Entry<Product>(product).State = EntityState.Modified;
             _context.SaveChanges();
         }
 
-        internal void Delete(Product product)
+        public void Delete(Product product)
         {
             _context.Product.Remove(product);
             _context.SaveChanges();

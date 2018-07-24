@@ -21,7 +21,7 @@ namespace ProductCatalog.Controlles
 
         [Route("v1/Products/{id}")]
         [HttpGet]
-        public Product GetById(int id)
+        public Product GetById(string id)
         {
             return _repository.Get(id);
         }
