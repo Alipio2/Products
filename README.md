@@ -1,4 +1,4 @@
-#CRUD de Produtos Simples, uma aplicaçao de  Data Driven Programming (DDP)    
+#CRUD de Produtos Simples, uma aplicação de  Data Driven Programming (DDP)    
 ======================
 Introdução
 ------
