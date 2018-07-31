@@ -15,7 +15,7 @@ namespace ProductCatalog.Dto.Maps
             builder.Property(x => x.Price).IsRequired().HasColumnType("money");
             builder.Property(x => x.SalePrice).IsRequired().HasColumnType("money");
             builder.Property(x => x.Description).IsRequired().HasMaxLength(4000).HasColumnType("varchar(4000)");
-            builder.Property(x => x.State).IsRequired();
+            builder.Property(x => x.State).IsRequired(); ;
             builder.Property(x => x.CreateDate).IsRequired();
             builder.Property(x => x.LastUpdateDate).IsRequired();
             builder.HasOne(x => x.Product).WithMany(x => x.Skus);

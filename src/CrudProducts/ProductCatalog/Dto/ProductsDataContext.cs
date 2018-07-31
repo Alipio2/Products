@@ -10,7 +10,7 @@ namespace ProductCatalog.Dto
         public DbSet<Sku> Sku { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=srvbatman.database.windows.net,1433;Database=BatmanBd;User ID=alipio;Password=@lp101010");
+            optionsBuilder.UseSqlServer(@"Server=localhost,1433;Database=Gotham;User ID=sa;Password=@lp101010");
         }
 
         protected override void OnModelCreating(ModelBuilder builder)
